@@ -1,4 +1,4 @@
-# 🎓 EduNest – Modular Learning Platform
+# 🎓 Modular Learning Platform
 
 > **Live Demo**: [Click to Explore the Platform](#) *(Deploy URL here)*  
 > A full-stack, modular LMS crafted for a rich, structured, and interactive e-learning experience.
