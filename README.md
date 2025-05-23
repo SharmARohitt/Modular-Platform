@@ -44,6 +44,51 @@ EduNest empowers administrators to build deeply nested course content and allows
 
 </details>
 
+## 👨‍🏫 Try It Yourself – Demo Credentials
+
+You can **log in and explore** the platform using the following sample accounts seeded by default:
+
+### 🛠️ Admin Account
+- **Email:** `admin@modularlearn.com`  
+- **Password:** `password123`
+
+### 🎓 Learner Account
+- **Email:** `learner@modularlearn.com`  
+- **Password:** `password123`
+
+---
+
+## 🧭 How to Use the Platform (Demo Guide)
+
+> 🔐 These accounts are preloaded to help you explore the platform quickly.
+
+1. **Login**  
+   Go to the login page and use the credentials above.
+
+2. **Explore as an Admin**
+   - Access the admin dashboard.
+   - Create or manage courses with nested content:
+     - Course → Section → Unit → Chapter
+   - Add chapter content using:
+     - ✅ Multiple Choice
+     - ✍️ Fill in the Blank
+     - 📝 Text Response
+     - 🎙️ Audio Answer (optional)
+   - Organize the learning structure visually and interactively.
+
+3. **Explore as a Learner**
+   - View assigned courses in your learner dashboard.
+   - Resume learning from where you left off.
+   - Attempt interactive chapter questions.
+   - Track your performance and progress per chapter.
+
+> 🧪 This walkthrough is ideal for testing, learning the structure, and understanding both content creation and learner journeys.
+
+---
+
+> ⚠️ **Important:** These demo credentials are meant for development or preview use only. Always replace or secure these accounts before deploying to production.
+
+
 <details>
   <summary><strong>📚 Learner Dashboard</strong></summary>
 
