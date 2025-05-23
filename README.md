@@ -1,172 +1,113 @@
-  A Modular Learning Platform
-Live Demo: Click to Explore the Platform
+# 🎓 EduNest – Modular Learning Platform
 
-EduNest is a full-stack, modular e-learning platform crafted for a rich, structured, and interactive learning experience. It empowers administrators to build nested course content and enables learners to progress through a dynamic, question-driven journey.
+> **Live Demo**: [Click to Explore the Platform](#) *(Deploy URL here)*  
+> A full-stack, modular LMS crafted for a rich, structured, and interactive e-learning experience.
 
-🚀 Overview
-This project challenges and demonstrates your ability to build a robust learning management system from the ground up. With deep nested data models, scalable APIs, protected routes, and dynamic content rendering, EduNest simulates the backbone of modern online learning platforms like Coursera or Udemy.
+EduNest empowers administrators to build deeply nested course content and allows learners to progress through a dynamic, question-driven journey – simulating the core functionalities of platforms like Coursera or Udemy.
 
-🕒 Development Time: 3-4 days
-📦 Stack: MERN + Next.js + JWT Auth
-📱 Optional: Flutter Mobile App for learners
+---
 
-✨ Features
-🔐 Authentication & Authorization
-JWT-based login & registration
+## 🚀 Project Overview
 
-User roles: Admin & Learner
+- 🛠️ **Built From Scratch**: Demonstrates the architecture of a scalable LMS.
+- 📂 **Nested Data Models**: Courses → Sections → Units → Chapters.
+- 🔐 **Role-Based Access**: Admin and Learner separation with protected routes.
+- 📱 **Optional Mobile App**: Seamless learner experience with Flutter.
+- ⏱️ **Development Time**: ~3-4 days.
 
-Route and feature access based on roles
+---
 
-Secure APIs with input sanitization and validation
+## ✨ Features
 
-🎓 Course Structure & Admin Panel
-Fully dynamic and deeply nested content management:
+<details>
+  <summary><strong>🔐 Authentication & Authorization</strong></summary>
 
-Course → Section → Unit → Chapter
+- Secure JWT-based login & registration.
+- Role-based route & feature access: `Admin`, `Learner`.
+- Input sanitization and robust validation.
+- Encrypted passwords using `bcrypt`.
 
-Rich chapter content with question types:
+</details>
 
-✅ Multiple Choice
+<details>
+  <summary><strong>🎓 Course Management & Admin Panel</strong></summary>
 
-✍️ Fill in the Blank
+- Fully dynamic, deeply nested structure:
+  - `Course` → `Section` → `Unit` → `Chapter`.
+- Rich content per chapter:
+  - ✅ Multiple Choice
+  - ✍️ Fill in the Blank
+  - 📝 Text Response
+  - 🎙️ Audio Answer *(Bonus Feature)*
+- Admin privileges:
+  - Create, edit, and reorganize course structures.
 
-📝 Text Response
+</details>
 
-🎙️ Audio Answer (Bonus)
+<details>
+  <summary><strong>📚 Learner Dashboard</strong></summary>
 
-Admins can create, edit, and organize educational content
+- Personalized course dashboard with progress memory.
+- Resume from last learned chapter.
+- Attempt chapter-level questions.
+- Get instant performance summaries.
 
-📚 Learner Dashboard
-Personalized course dashboard
+</details>
 
-Resume learning from last progress point
+<details>
+  <summary><strong>⚙️ Backend Architecture</strong></summary>
 
-Attempt chapter-level questions and save progress
+- Built with **Node.js + Express + MongoDB**.
+- REST APIs for:
+  - Users, Courses, Sections, Units, Chapters, Questions, Progress.
+- Clean nested population with `Mongoose`.
+- Password hashing & validation.
+- Strong error handling and schema validation.
 
-Receive performance summaries per chapter
+</details>
 
-⚙️ Backend (Node.js + Express + MongoDB)
-RESTful APIs with Mongoose models for:
+<details>
+  <summary><strong>🖥 Frontend (Next.js)</strong></summary>
 
-Users, Courses, Sections, Units, Chapters
+- Built with **Next.js**, **React**, and **TailwindCSS**.
+- SSR/SSG for SEO-ready public pages.
+- Role-based dynamic routing.
+- Nested UI structure using accordions/tree views.
+- Global state via `React Context`.
 
-Questions and User Progress
+</details>
 
-Proper population of nested content
+<details>
+  <summary><strong>📱 Optional Mobile App (Flutter)</strong></summary>
 
-Robust error handling, validation, and secure password hashing
+- Cross-platform mobile interface for learners.
+- Core features:
+  - Login
+  - Course Exploration
+  - Chapter Navigation
+  - Question Attempting
+- Real-time API sync for tracking progress.
 
-🖥 Frontend (Next.js)
-Clean, intuitive UIs for both admin and learner roles
+</details>
 
-SSR/SSG for public views
+---
 
-Dynamic routing and React Context for global state
+## 🧩 Tech Stack
 
-Nested course structure displayed with accordions or tree views
+| Layer         | Technologies                                |
+|---------------|---------------------------------------------|
+| Frontend      | Next.js, React, TailwindCSS                 |
+| Backend       | Node.js, Express.js                         |
+| Database      | MongoDB, Mongoose                           |
+| Authentication| JWT, bcrypt                                 |
+| Mobile (Opt)  | Flutter                                     |
 
-📱 (Bonus) Flutter Mobile App
-Learner-friendly mobile interface (optional)
+---
 
-Login, explore courses, navigate chapters, attempt questions
+## 🧪 Setup Instructions
 
-API integration for real-time progress tracking
+### 📥 Clone Repository
 
-🧩 Architecture & Tech Stack
-Layer	Technology
-Frontend	Next.js, React, TailwindCSS
-Backend	Node.js, Express.js
-Database	MongoDB + Mongoose
-Authentication	JWT + Bcrypt
-Mobile (Optional)	Flutter
-
-🧪 Setup Instructions
-Clone the repository
-
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/your-username/edunest.git
 cd edunest
-Start the backend
-
-bash
-Copy
-Edit
-cd backend
-npm install
-npm start
-# Runs on http://localhost:5000
-Start the frontend
-
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm run dev
-# Runs on http://localhost:3001
-Environment variables
-
-Add a .env file in backend/ with:
-
-ini
-Copy
-Edit
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-📜 Sample Credentials
-Admin
-
-Email: admin@example.com
-
-Password: admin123
-
-Learner
-
-Email: learner@example.com
-
-Password: learner123
-
-📬 API Documentation
-A Postman collection is available in the docs/ folder (optional). APIs include:
-
-Auth: POST /api/register, POST /api/login
-
-Courses: GET /api/courses, POST /api/courses (admin)
-
-Sections, Units, Chapters: CRUD routes
-
-User progress tracking and score summaries
-
-🎯 Project Highlights
-✅ Role-based Access Control: Cleanly separates user experiences
-
-✅ Deeply Nested Data Handling: Complex relationships made intuitive
-
-✅ Conditional UI Rendering: Based on user role & course structure
-
-✅ State Management: React Context for session and progress tracking
-
-✅ Security Focus: API protection, input sanitization, password hashing
-
-✅ Optional Mobile-first Experience: Seamless Flutter integration
-
-🌱 Future Improvements
-Add certification system on course completion
-
-Analytics dashboard for admin (learner progress, drop-off rates)
-
-Real-time leaderboard or peer discussion features
-
-Fully integrated Flutter mobile app
-
-📎 Folder Structure (Simplified)
-vbnet
-Copy
-Edit
-/frontend        → Next.js frontend with role-based routing
-/backend         → Express backend with MongoDB and JWT
-/docs            → Postman collection, API reference (optional)
-/mobile          → Flutter app (optional)
