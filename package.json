@@ -1,0 +1,30 @@
+{
+  "name": "modular-learning-platform",
+  "version": "1.0.0",
+  "description": "A full-stack modular learning platform with Next.js frontend and Express backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start --prefix backend",
+    "start:backend": "npm run start --prefix backend",
+    "start:frontend": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "learning",
+    "platform",
+    "nextjs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
